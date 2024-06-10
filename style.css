@@ -86,5 +86,6 @@ section {
    -webkit-text-stroke: .7px var(--main-color);
 }
 .home-content p {
-    color: var(--main-color);
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
 }
