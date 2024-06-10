@@ -58,3 +58,12 @@
     cursor: pointer;
     display: none;
 }
+section {
+    padding: 10rem 9% 2rem;
+    min-height: 100vh;
+}
+.home {
+    display: flex;
+    align-items: center;
+    
+}
