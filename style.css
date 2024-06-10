@@ -85,3 +85,6 @@ section {
    color: transparent;
    -webkit-text-stroke: .7px var(--main-color);
 }
+.home-content p {
+    color: var(--main-color);
+}
