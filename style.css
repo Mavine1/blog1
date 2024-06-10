@@ -49,3 +49,6 @@
     margin-left: 3.5rem;
     transition: .3s;
 }
+.navbar a:hover,.navbar a.active {
+    color: var(--main-color);
+}
