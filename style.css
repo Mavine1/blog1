@@ -54,5 +54,7 @@
 }
 #menu-icon {
     font-size: 3.6rem;
-    color: va;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
 }
