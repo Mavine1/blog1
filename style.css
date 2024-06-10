@@ -15,5 +15,14 @@
      --bg-color:#081b29;
      --second-color:#112e42;
      --text-color: #ededed;
-     --main-color: #00ab0;
+     --main-color: #00abf0;
 }
+ html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+ body {
+    background: var(--bg-color);
+    color: var(--text-color);
+ }
+.header 
