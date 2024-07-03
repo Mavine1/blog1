@@ -10,7 +10,8 @@ export default function About() {
             <p>
             Welcome to David's Inspiration! This blog was created by David as a platform 
             to share biblical inspiration and spiritual insights with the world.
-             David is a devoted follower of Christ who is passionate about exploring and sharing the wisdom found in God's Word.
+             David is a devoted follower of Christ who is passionate about 
+             exploring and sharing the wisdom found in God's Word.
             </p>
 
             <p>
@@ -21,10 +22,11 @@ export default function About() {
             </p>
 
             <p>
-              We encourage you to leave comments on our posts and engage with
-              other readers. You can like other people's comments and reply to
-              them as well. We believe that a community of learners can help
-              each other grow and improve.
+            We encourage you to engage with our community by leaving comments on our posts
+             and interacting with other readers. You can like and reply to comments, 
+             fostering meaningful discussions about faith and scripture. 
+             We believe that by sharing our spiritual journeys and insights, 
+             we can help each other grow in our relationship with God and deepen our understanding of His Word.
             </p>
           </div>
         </div>
