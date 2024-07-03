@@ -22,23 +22,17 @@ export default function FooterCom() {
               <Footer.Title title='About' />
               <Footer.LinkGroup col>
                 <Footer.Link
-                  href='https://www.100jsprojects.com'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  100 JS Projects
-                </Footer.Link>
-                <Footer.Link
                   href='/about'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Sahand's Blog
+                  David Inspiration
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
               <Footer.Title title='Follow us' />
+              <Footer.LinkGroup col>
                 <Footer.Link
                   href='https://www.github.com/sahandghavidel'
                   target='_blank'
