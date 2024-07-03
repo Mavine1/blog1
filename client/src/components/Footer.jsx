@@ -1,6 +1,6 @@
 import { Footer } from 'flowbite-react';
 import { Link } from 'react-router-dom';
-import { BsFacebook, BsInstagram, BsTwitter, BsGithub, BsDribbble } from 'react-icons/bs';
+import { BsFacebook, BsInstagram, BsTwitter,  BsDribbble } from 'react-icons/bs';
 export default function FooterCom() {
   return (
     <Footer container className='border border-t-8 border-teal-500'>
@@ -18,20 +18,6 @@ export default function FooterCom() {
             </Link>
           </div>
           <div className='grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6'>
-            <div>
-              <Footer.Title title='About' />
-              <Footer.LinkGroup col>
-                <Footer.Link
-                  href='/about'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  David Inspiration
-                </Footer.Link>
-              </Footer.LinkGroup>
-            </div>
-            <div>
-            </div>
           </div>
         </div>
         <Footer.Divider />
@@ -47,7 +33,6 @@ export default function FooterCom() {
             <Footer.Icon href='#' icon={BsFacebook}/>
             <Footer.Icon href='#' icon={BsInstagram}/>
             <Footer.Icon href='#' icon={BsTwitter}/>
-            <Footer.Icon href='https://github.com/sahandghavidel' icon={BsGithub}/>
             <Footer.Icon href='#' icon={BsDribbble}/>
 
           </div>
