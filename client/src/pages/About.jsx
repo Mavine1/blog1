@@ -8,17 +8,16 @@ export default function About() {
           </h1>
           <div className='text-md text-gray-500 flex flex-col gap-6'>
             <p>
-              Welcome to Sahand's Blog! This blog was created by Sahand Ghavidel
-              as a personal project to share his thoughts and ideas with the
-              world. Sahand is a passionate developer who loves to write about
-              technology, coding, and everything in between.
+            Welcome to David's Inspiration! This blog was created by David as a platform 
+            to share biblical inspiration and spiritual insights with the world.
+             David is a devoted follower of Christ who is passionate about exploring and sharing the wisdom found in God's Word.
             </p>
 
             <p>
-              On this blog, you'll find weekly articles and tutorials on topics
-              such as web development, software engineering, and programming
-              languages. Sahand is always learning and exploring new
-              technologies, so be sure to check back often for new content!
+            On this blog, you'll find regular posts featuring biblical reflections, 
+            devotional thoughts, and practical applications of scripture for daily life. 
+            David is constantly studying the Bible and seeking God's guidance, 
+            so be sure to check back often for fresh spiritual content that aims to encourage and uplift!
             </p>
 
             <p>
