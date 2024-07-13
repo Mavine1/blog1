@@ -1,4 +1,4 @@
-import { Alert, Button, Modal, ModalBody, TextInput } from 'flowbite-react';
+import { Alert, Button, Modal, TextInput } from 'flowbite-react';
 import { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import {
@@ -82,6 +82,7 @@ export default function DashProfile() {
         setImageFile(null);
         setImageFileUrl(null);
         setImageFileUploading(false);
+        console.error('Image upload error:', error);
       },
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
@@ -291,7 +292,7 @@ export default function DashProfile() {
             </h3>
             <div className='flex justify-center gap-4'>
               <Button color='failure' onClick={handleDeleteUser}>
-                Yes, I'm sure
+                Yes, Iam sure
               </Button>
               <Button color='gray' onClick={() => setShowModal(false)}>
                 No, cancel
