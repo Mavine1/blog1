@@ -28,11 +28,11 @@ export default function CallToAction() {
             Fuel Your Faith Journey
             </h2>
             <p className='text-gray-500 my-2'>
-            Explore the Bible with these online resources
+            Discover wisdom in Scripture and uplifting Christian literature
             </p>
             <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
                 <a href="https://www.biblegateway.com" target='_blank' rel='noopener noreferrer'>
-                Read the Bible Online
+                
                 </a>
             </Button>
         </div>
