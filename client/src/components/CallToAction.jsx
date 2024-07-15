@@ -17,7 +17,7 @@ export default function CallToAction() {
             </Button>
         </div>
         <div className="p-7 flex-1">
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fbible-texture&psig=AOvVaw3XyuHd2yKCREkahAiexxMA&ust=1721119353006000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCSrrPTqIcDFQAAAAAdAAAAABAY" />
+            <img src="https://www.google.com/imgres?q=blog%20bible%20images%20jpg&imgurl=https%3A%2F%2Fdavidjeremiah.blog%2Fwp-content%2Fuploads%2F2018%2F02%2Fis-bible-prophecy-important.jpg&imgrefurl=https%3A%2F%2Fdavidjeremiah.blog%2Fis-bible-prophecy-important%2F&docid=mmUy8TwuCKCdGM&tbnid=daqfe-gd_nz9sM&vet=12ahUKEwiWiayS1KiHAxWq9QIHHYqtD9IQM3oECFoQAA..i&w=750&h=420&hcb=2&ved=2ahUKEwiWiayS1KiHAxWq9QIHHYqtD9IQM3oECFoQAA" />
         </div>
     </div>
   )
