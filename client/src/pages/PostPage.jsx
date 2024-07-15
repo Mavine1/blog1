@@ -37,18 +37,18 @@ export default function PostPage() {
   }, [postSlug]);
 
   useEffect(() => {
-    try {
-      const fetchRecentPosts = async () => {
+    const fetchRecentPosts = async () => {
+      try {
         const res = await fetch(`/api/post/getposts?limit=3`);
         const data = await res.json();
         if (res.ok) {
           setRecentPosts(data.posts);
         }
-      };
-      fetchRecentPosts();
-    } catch (error) {
-      console.log(error.message);
-    }
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
+    fetchRecentPosts();
   }, []);
 
   if (loading)
