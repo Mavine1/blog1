@@ -18,10 +18,10 @@ export default function Home() {
       <div className='flex flex-col gap-4 p-12 px-3 max-w-6xl mx-auto'>
         <h1 className='text-2xl '><em>Ignite Your Faith, Illuminate Your Path</em></h1>
         <p className='text-gray-500 text-xs sm:text-sm'>
-          {/* Add your subheading or description here */}
+           Discover daily inspiration and spiritual insights to guide your journey
         </p>
       </div>
-      <hr className="my-8 border-gray-300 max-w-6xl mx-auto" />
+      <hr className="my-6 border-gray-300 max-w-6xl mx-auto" />
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-6 py-4'>
         {posts && posts.length > 0 && (
           <div className='flex flex-col gap-4'>
