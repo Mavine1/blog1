@@ -37,7 +37,7 @@ export default function CallToAction() {
             </Button>
         </div>
         <div className="p-7 flex-1">
-            <img src="https://www.shutterstock.com/image-vector/more-that-you-read-things-will-424196938" alt="Bible study" />
+            <img src="https://www.shutterstock.com/image-vector/read-more-symbol-paint-brush-stroke-2012420402" alt="Bible study" />
         </div>
       </div>
     </>
