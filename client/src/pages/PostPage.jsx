@@ -69,14 +69,14 @@ export default function PostPage() {
           {post && post.category}
         </Button>
       </Link>
-      <div className="mt-10 w-full overflow-hidden rounded-3xl shadow-lg">
+      <div className="mt-10 w-full overflow-hidden rounded-3xl shadow-lg border-2 border-teal-500">
         <img
           src={post && post.image}
           alt={post && post.title}
           className='w-full object-cover max-h-[400px]'
         />
         <div
-          className='p-6 bg-blue-900 text-white flex flex-col justify-between shadow-lg'
+          className='p-6 bg-blue-900 text-white flex flex-col justify-between '
           dangerouslySetInnerHTML={{ __html: post && post.content }}
         ></div>
       </div>
