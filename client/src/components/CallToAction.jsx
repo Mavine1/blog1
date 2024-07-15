@@ -32,7 +32,7 @@ export default function CallToAction() {
             </p>
             <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
                 <a href="https://www.biblegateway.com" target='_blank' rel='noopener noreferrer'>
-                
+                Find Inspiring Reads
                 </a>
             </Button>
         </div>
