@@ -80,7 +80,7 @@ export default function PostPage() {
           dangerouslySetInnerHTML={{ __html: post && post.content }}
         ></div>
       </div>
-      <div className='flex justify-between p-3 border-b border-slate-500 w-full text-xs'>
+      <div className=''>
         <span>{post && new Date(post.createdAt).toLocaleDateString()}</span>
         <span className='italic'>
           {post && (post.content.length / 1000).toFixed(0)} mins read
