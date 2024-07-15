@@ -69,27 +69,41 @@ export default function PostPage() {
           {post && post.category}
         </Button>
       </Link>
-      <div className="mt-10 max-w-2xl mx-auto w-full overflow-hidden rounded-3xl shadow-lg">
-  <img
-    src={post && post.image}
-    alt={post && post.title}
-    className='w-full object-cover max-h-[400px]'
-  />
-  <div
-    className='p-6 bg-blue-900 text-white flex flex-col justify-between'
-    dangerouslySetInnerHTML={{ __html: post && post.content }}
-  ></div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+      <div className="mt-10 w-full overflow-hidden rounded-3xl shadow-lg">
+        <img
+          src={post && post.image}
+          alt={post && post.title}
+          className='w-full object-cover max-h-[400px]'
+        />
+        <div
+          className='p-6 bg-blue-900 text-white flex flex-col justify-between'
+          dangerouslySetInnerHTML={{ __html: post && post.content }}
+        ></div>
+      </div>
       <div className='flex justify-between p-3 border-b border-slate-500 mx-auto w-full max-w-2xl text-xs'>
         <span>{post && new Date(post.createdAt).toLocaleDateString()}</span>
         <span className='italic'>
           {post && (post.content.length / 1000).toFixed(0)} mins read
         </span>
       </div>
-      <CommentSection postId={post._id} />
 
-      <div className='flex flex-col  items-center mb-5'>
-        <h1 className='text-xl mt-5'>Recent  articles</h1>
+      <CommentSection postId={post && post._id} />
+
+
+
+      <div className='flex flex-col items-center mb-5'>
+        <h1 className='text-xl mt-5'>Recent articles</h1>
         <div className='flex flex-wrap gap-5 mt-5 justify-center'>
           {recentPosts &&
             recentPosts.map((post) => <PostCard key={post._id} post={post} />)}
