@@ -11,8 +11,8 @@ export default function CallToAction() {
             Explore the Bible with these online resources
             </p>
             <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
-                <a href="https://www.100jsprojects.com" target='_blank' rel='noopener noreferrer'>
-                    100 JavaScript Projects
+                <a href="https://" target='_blank' rel='noopener noreferrer'>
+                Read the Bible Online
                 </a>
             </Button>
         </div>
