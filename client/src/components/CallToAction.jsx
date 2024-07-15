@@ -11,13 +11,13 @@ export default function CallToAction() {
             Explore the Bible with these online resources
             </p>
             <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
-                <a href="https://" target='_blank' rel='noopener noreferrer'>
+                <a href="https://www.biblegateway.com" target='_blank' rel='noopener noreferrer'>
                 Read the Bible Online
                 </a>
             </Button>
         </div>
         <div className="p-7 flex-1">
-            <img src="https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg" />
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fbible-texture&psig=AOvVaw3XyuHd2yKCREkahAiexxMA&ust=1721119353006000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCSrrPTqIcDFQAAAAAdAAAAABAY" />
         </div>
     </div>
   )
