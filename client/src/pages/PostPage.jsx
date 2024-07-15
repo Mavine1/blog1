@@ -69,17 +69,6 @@ export default function PostPage() {
           {post && post.category}
         </Button>
       </Link>
-
-
-
-
-
-
-
-
-
-
-
       <div className="mt-10 w-full overflow-hidden rounded-3xl shadow-lg">
         <img
           src={post && post.image}
@@ -97,11 +86,7 @@ export default function PostPage() {
           {post && (post.content.length / 1000).toFixed(0)} mins read
         </span>
       </div>
-
       <CommentSection postId={post && post._id} />
-
-
-
       <div className='flex flex-col items-center mb-5'>
         <h1 className='text-xl mt-5'>Recent articles</h1>
         <div className='flex flex-wrap gap-5 mt-5 justify-center'>
