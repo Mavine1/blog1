@@ -39,9 +39,9 @@ export default function Home() {
             </Link>
           </div>
         )}
-      </div>
-    </div>
-
+          </div>
+        )
+      }    </div>
   return (
     <div>
       <div className='flex flex-col gap-4 p-12 px-3 max-w-6xl mx-auto'>
@@ -67,5 +67,4 @@ export default function Home() {
         )}
       </div>
     </div>
-  );
-}}
+  )}}
