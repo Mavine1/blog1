@@ -31,7 +31,7 @@ export default function CallToAction() {
             Discover wisdom in Scripture and uplifting Christian literature
             </p>
             <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
-                <a href="#inspirational-books" target='_blank' rel='noopener noreferrer'>
+                <a href="https://www.infobooks.org/free-pdf-books/self-improvement/motivation/" target='_blank' rel='noopener noreferrer'>
                 Find Inspiring Reads
                 </a>
             </Button>
