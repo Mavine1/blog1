@@ -17,7 +17,7 @@ export default function CallToAction() {
             </Button>
         </div>
         <div className="p-7 flex-1">
-            <img src="https://www.freepik.com/free-photo/holy-bible-with-rays-light-coming-out-ai-generative_41369575.htm#query=bible&position=20&from_view=keyword&track=sph&uuid=85902157-ab3b-4fac-965b-6a94a997d7d2" />
+            <img src="https://www.freepik.com/free-photo/holy-bible-with-rays-light-coming-out-ai-generative_41369575.htm#query=bible&position=20&from_view=keyword&track=sph&uuid=85902157-ab3b-4fac-965b-6a94a997d7d2.jpg" />
         </div>
     </div>
   )
