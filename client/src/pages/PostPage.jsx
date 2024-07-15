@@ -76,7 +76,7 @@ export default function PostPage() {
     className='w-full object-cover max-h-[400px]'
   />
   <div
-    className='p-6 bg-white'
+    className='p-6 bg-blue-900 text-white flex flex-col justify-between'
     dangerouslySetInnerHTML={{ __html: post && post.content }}
   ></div>
 </div>
