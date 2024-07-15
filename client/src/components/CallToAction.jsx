@@ -37,7 +37,7 @@ export default function CallToAction() {
             </Button>
         </div>
         <div className="p-7 flex-1">
-            <img src="https://images.squarespace-cdn.com/content/v1/5c47a0d429711455c39793c1/1678668363499-AML9EF3QGVLYA3K1AHZ2/IMG_2050.jpg?format=2500w" alt="Bible study" />
+            <img src="https://www.shutterstock.com/image-vector/more-that-you-read-things-will-424196938" alt="Bible study" />
         </div>
       </div>
     </>
