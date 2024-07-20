@@ -21,11 +21,10 @@ export default function Home() {
            Discover daily inspiration and spiritual insights to guide your journey
         </p>
       </div>
-      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-6 py-4'>
-
+      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-2 py-4'>
         {posts && posts.length > 0 && (
-          <div className='flex flex-col gap-4'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+          <div className='flex flex-col gap-2'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2'>
               {posts.map((post) => (
                 <PostCard key={post._id} post={post} />
               ))}
