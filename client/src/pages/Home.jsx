@@ -24,7 +24,7 @@ export default function Home() {
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-6 py-4'>
         {posts && posts.length > 0 && (
           <div className='flex flex-col gap-4'>
-            <div className='flex flex-wrap gap-4 sm:flex-nowrap lg:flex lg:flex'>
+            <div className='flex flex-wrap gap-4 sm:flex-nowrap lg:grid lg:grid-cols-3'>
               {posts.map((post) => (
                 <PostCard key={post._id} post={post} />
               ))}
