@@ -104,9 +104,9 @@ export default function CreatePost() {
             }
           >
             <option value='uncategorized'>Select a category</option>
-            <option value='javascript'>Biblical Reflections</option>
-            <option value='reactjs'>Daily Devotionals</option>
-            <option value='nextjs'>Christian Living</option>
+            <option value='Biblical Reflections'>Biblical Reflections</option>
+            <option value='Daily Devotionals'>Daily Devotionals</option>
+            <option value='Christian Living'>Christian Living</option>
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
