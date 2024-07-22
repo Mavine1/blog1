@@ -87,7 +87,7 @@ export default function PostPage() {
         </span>
       </div>
       <CommentSection postId={post && post._id} />
-      <div className='flex flex-col items-center mb-5'>
+      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
         <h1 className='text-xl mt-5'>Recent articles</h1>
         <div className='flex flex-wrap gap-4 sm:flex-nowrap  lg:gap-8'>
           {recentPosts &&
