@@ -23,7 +23,7 @@ export default function Home() {
       </div>
       <div className='flex flex-col mx-auto items-center mb-5'>
   {posts && posts.length > 0 && (
-    <div className='flex flex-col gap-6'>
+    <div className='flex flex-col gap-4'>
       <div className='flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8'>
         {posts.slice(0, 3).map((post) => (
           <PostCard key={post._id} post={post} />
