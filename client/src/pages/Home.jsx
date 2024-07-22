@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className='flex flex-col gap-4 p-4 mx-auto  max-w-6xl '>
+      <div className='flex flex-col gap-4 p-4 mx-auto px-3 max-w-6xl '>
         <h1 className='text-2xl '><em>Ignite Your Faith, Illuminate Your Path</em></h1>
         <p className='text-gray-500 text-xs sm:text-sm'>
            Discover daily inspiration and spiritual insights to guide your journey
