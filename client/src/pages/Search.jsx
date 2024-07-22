@@ -131,9 +131,9 @@ export default function Search() {
               id='category'
             >
               <option value='uncategorized'>Uncategorized</option>
-              <option value='reactjs'>Biblical Reflections</option>
-              <option value='nextjs'>Daily Devotionals</option>
-              <option value='javascript'>Christian Living</option>
+              <option value='Biblical Reflections'>Biblical Reflections</option>
+              <option value='Daily Devotionals'>Daily Devotionals</option>
+              <option value='Christian Living'>Christian Living</option>
             </Select>
           </div>
           <Button type='submit' outline gradientDuoTone='purpleToPink'>
