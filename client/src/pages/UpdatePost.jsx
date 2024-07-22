@@ -130,9 +130,9 @@ export default function UpdatePost() {
             value={formData.category}
           >
             <option value='uncategorized'>Select a category</option>
-            <option value='javascript'>Biblical Reflection</option>
-            <option value='reactjs'>Daily Devotional</option>
-            <option value='nextjs'>christian Living</option>
+            <option value='Biblical Reflection'>Biblical Reflection</option>
+            <option value='Daily Devotional'>Daily Devotional</option>
+            <option value='christian Living'>christian Living</option>
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
