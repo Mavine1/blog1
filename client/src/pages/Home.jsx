@@ -21,7 +21,7 @@ export default function Home() {
            Discover daily inspiration and spiritual insights to guide your journey
         </p>
       </div>
-      <div className='flex gap-6 sm:mt-0 mt-4 sm:justify-center'>
+      <div className='flex flex-col mx-auto items-center mb-5'>
   {posts && posts.length > 0 && (
     <div className='flex flex-col gap-4'>
       <div className='flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-4'>
