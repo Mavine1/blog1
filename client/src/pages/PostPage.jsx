@@ -1,6 +1,7 @@
 import { Button, Spinner } from 'flowbite-react';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { FaShare } from 'react-icons/fa';
 import CommentSection from '../components/CommentSection';
 import PostCard from '../components/PostCard';
 
@@ -50,12 +51,33 @@ export default function PostPage() {
     fetchRecentPosts();
   }, []);
 
+  const handleShare = async () => {
+    const shareData = {
+      title: post.title,
+      text: `Check out this post: ${post.title}`,
+      url: window.location.href,
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (error) {
+        console.error('Error sharing:', error);
+      }
+    } else {
+      // Fallback to copying URL
+      navigator.clipboard.writeText(window.location.href);
+      alert('Link copied to clipboard!');
+    }
+  };
+
   if (loading)
     return (
       <div className='flex justify-center items-center min-h-screen'>
         <Spinner size='xl' />
       </div>
     );
+
   return (
     <main className='p-3 flex flex-col max-w-6xl mx-auto min-h-screen'>
       <h1 className='text-3xl mt-10 p-3 text-center font-serif max-w-2xl mx-auto lg:text-4xl'>
@@ -82,9 +104,17 @@ export default function PostPage() {
       </div>
       <div className='flex justify-between p-3 border-b border-slate-500 w-full text-xs'>
         <span>{post && new Date(post.createdAt).toLocaleDateString()}</span>
-        <span className='italic'>
-          {post && (post.content.length / 1000).toFixed(0)} mins read
-        </span>
+        <div className='flex items-center gap-2'>
+          <span className='italic'>
+            {post && (post.content.length / 1000).toFixed(0)} mins read
+          </span>
+          <Button
+            onClick={handleShare}
+          >
+            <FaShare />
+            Share
+          </Button>
+        </div>
       </div>
       <CommentSection postId={post && post._id} />
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
