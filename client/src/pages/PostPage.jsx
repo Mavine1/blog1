@@ -103,7 +103,7 @@ export default function PostPage() {
         ></div>
       </div>
       <div className='flex justify-between p-3 border-b border-slate-500 w-full text-xs'>
-        <span>{post && new Date(post.createdAt).toLocaleDateString()}</span>
+        <span className="pt-2">{post && new Date(post.createdAt).toLocaleDateString()}</span>
         <div className='flex items-center gap-2'>
           <span className='italic'>
             {post && (post.content.length / 1000).toFixed(0)} mins read
