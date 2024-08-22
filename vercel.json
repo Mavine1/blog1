@@ -1,10 +1,4 @@
-{ 
-    "builds": [
-    {
-      "src": "*nde.js",
-      "use": "@vercel/node"
-    }
-],
+{ "buildCommand": "npm run dev",
 "framework" :"vite",
  "version": 2,
  "rewrites": [{ "source": "/api/(.*)", 
