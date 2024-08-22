@@ -26,7 +26,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: 'https://david-inspiration.vercel.app',
+  origin: 'https://david-inspiration.netlify.app/',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
