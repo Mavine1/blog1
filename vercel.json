@@ -2,7 +2,6 @@
     "version": 2,
     "builds": [
       {
-        "buildCommand": "npm run build",
         "src": "*.js",
         "use": "@vercel/node"
       }
