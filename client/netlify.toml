@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/api/*"
-  to = "https://backened-wawe.onrender.com/"
-  status = 200
