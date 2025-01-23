@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://david-inspiration.onrender.com',
+        target: 'https://david-blog-580bbcb9a6c9.herokuapp.com/',
         secure: false,
       },
     },
