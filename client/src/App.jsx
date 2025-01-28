@@ -17,6 +17,7 @@ import Search from './pages/Search';
 
 export default function App() {
   return (
+    <div className='px-4 md:px-8 lg:px-16 xl:px-24'>
     <BrowserRouter>
       <ScrollToTop />
       <Header />
@@ -39,5 +40,6 @@ export default function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
+    </div>
   );
 }
