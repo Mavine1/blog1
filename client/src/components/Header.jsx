@@ -1,6 +1,6 @@
-import { Avatar, Button, Dropdown, Navbar, TextInput } from 'flowbite-react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { AiOutlineSearch } from 'react-icons/ai';
+import { Avatar, Button, Dropdown, Navbar, } from 'flowbite-react';
+import { Link, useLocation, } from 'react-router-dom';
+// import { AiOutlineSearch } from 'react-icons/ai';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleTheme } from '../redux/theme/themeSlice';
@@ -10,11 +10,10 @@ import { useEffect, useState } from 'react';
 export default function Header() {
   const path = useLocation().pathname;
   const location = useLocation();
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const { currentUser } = useSelector((state) => state.user);
   const { theme } = useSelector((state) => state.theme);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [ setSearchTerm] = useState('');
 
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search);
@@ -39,17 +38,8 @@ export default function Header() {
       console.log(error.message);
     }
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const urlParams = new URLSearchParams(location.search);
-    urlParams.set('searchTerm', searchTerm);
-    const searchQuery = urlParams.toString();
-    navigate(`/search?${searchQuery}`);
-  };
-
   return (
-    <Navbar className='border-b-2'>
+    <Navbar>
       <Link
         to='/'
         className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'
@@ -59,19 +49,10 @@ export default function Header() {
         </span>
         <em>Inspiration</em>
       </Link>
-      <form onSubmit={handleSubmit}>
-        <TextInput
-          type='text'
-          placeholder='Search...'
-          rightIcon={AiOutlineSearch}
-          className='hidden lg:inline'
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </form>
-      <Button className='w-12 h-10 lg:hidden' color='gray' pill>
+  
+      {/* <Button className='w-12 h-10 lg:hidden' color='gray' pill>
         <AiOutlineSearch />
-      </Button>
+      </Button> */}
       <div className='flex gap-2 md:order-2'>
         <Button
           className='w-12 h-10'
