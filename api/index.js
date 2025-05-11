@@ -24,21 +24,20 @@ const __dirname = path.resolve();
 
 const app = express();
 
-// CORS configuration
-const corsOptions = {
-  origin: 'https://david-inspiration.onrender.com/',
+// Updated CORS configuration to allow all origins
+app.use(cors({
+  origin: true, // Allow requests from any origin
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
   optionsSuccessStatus: 200
-};
+}));
 
-app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
 
-app.listen(process.env.PORT ||3000, () => {
-  console.log('Server is running on port 3000!');
+app.listen(process.env.PORT || 3000, () => {
+  console.log('Server is running on port ' + (process.env.PORT || 3000) + '!');
 });
 
 app.use('/api/user', userRoutes);
@@ -53,6 +52,7 @@ app.get('*', (req, res) => {
 });
 
 app.use((err, req, res, next) => {
+  console.error('Error:', err); // Enhanced error logging
   const statusCode = err.statusCode || 500;
   const message = err.message || 'Internal Server Error';
   res.status(statusCode).json({
