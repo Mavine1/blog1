@@ -4,7 +4,7 @@
   "type": "module",
   "main": "api/index.js",
   "scripts": {
-    "client": "cd client && npm run dev",
+    "client": "cd client && npm run build",
     "api": "cd api && node index.js",
     "build": "npm install && npm install --prefix client && npm run build --prefix client",
     "dev": "concurrently -n \"client,api\" -c \"bgBlue,bgYellow\" \"npm run client\" \"node api/index.js\""
