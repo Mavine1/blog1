@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "main": "api/index.js",
- "scripts": {
-  "client": "cd client && npm run dev",
-  "api": "cd api && node index.js",
-  "build": "npm install && npm install --prefix client && npm run build --prefix client",
-  "dev": "concurrently -n \"client,api\" -c \"bgBlue,bgYellow\" \"npm run client\" \"node api/index.js\""
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "api": "cd api && node index.js",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client",
+    "dev": "concurrently -n \"client,api\" -c \"bgBlue,bgYellow\" \"npm run client\" \"node api/index.js\""
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,7 @@
     "mongoose": "^8.4.4"
   },
   "devDependencies": {
+    "@vitejs/plugin-react-swc": "^3.9.0",
     "nodemon": "^3.1.4"
   },
   "description": ""
